@@ -1,0 +1,7 @@
+^\.git$
+^\.vs$
+^\.idea$
+^artifacts$
+^tools$
+^bin$
+^obj$
