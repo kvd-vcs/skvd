@@ -9,7 +9,6 @@
 
     <ItemGroup>
       <PackageReference Include="Kuvalda.Core" Version="0.2.2" />
-      <PackageReference Include="Microsoft.DotNet.ILCompiler" Version="1.0.0-alpha-27212-02" />
       <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
       <PackageReference Include="System.IO.Abstractions" Version="3.0.2" />
     </ItemGroup>
@@ -17,10 +16,6 @@
     <ItemGroup>
       <None Remove="usage.txt" />
       <EmbeddedResource Include="usage.txt" />
-    </ItemGroup>
-
-    <ItemGroup>
-        <RdXmlFile Include="rd.xml" />
     </ItemGroup>
 
 </Project>
