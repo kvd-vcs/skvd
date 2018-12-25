@@ -7,8 +7,18 @@ var target = Argument("target", "All");
 
 Task("Clean").Does(() =>
 {
-	DeleteDirectory("./artifacts", recursive: true);
-	DeleteFile("./skvd.zip");
+	if(DirectoryExists("./artifacts"))
+	{
+		DeleteDirectory("./artifacts", new DeleteDirectorySettings {
+			Recursive = true,
+			Force = true
+		});
+	}
+	
+	if(FileExists("./skvd.zip"))
+	{
+		DeleteFile("./skvd.zip");
+	}
 });
 
 Task("Build").Does(() =>
