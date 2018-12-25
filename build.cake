@@ -1,5 +1,5 @@
 
-var target = Argument("target", "Default");
+var target = Argument("target", "All");
 
 //////////////////////////////////////////////////////////////////////
 // BUILD TASK
