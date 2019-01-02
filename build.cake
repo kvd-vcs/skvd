@@ -14,11 +14,6 @@ Task("Clean").Does(() =>
 			Force = true
 		});
 	}
-	
-	if(FileExists("./skvd.zip"))
-	{
-		DeleteFile("./skvd.zip");
-	}
 });
 
 Task("Build").Does(() =>
@@ -37,7 +32,7 @@ Task("Build").Does(() =>
 Task("PackZip").Does(() =>
 {
 	var files = GetFiles("./artifacts/bin/*");
-	Zip("./artifacts/bin", "skvd.zip", files);
+	Zip("./artifacts/bin", "./artifacts/skvd.zip", files);
 });
  
 //////////////////////////////////////////////////////////////////////
